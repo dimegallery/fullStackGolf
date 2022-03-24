@@ -2,7 +2,7 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const pgp = require('pg-promise')()
 const router = express.Router()
-const bcrypt = require('bcrypt')
+const bcrypt = require("bcryptjs")
 const saltRounds = 10
 router.use(bodyParser.urlencoded({ extended: false }))
 
